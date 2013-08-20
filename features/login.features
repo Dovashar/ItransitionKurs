@@ -1,0 +1,21 @@
+Feature: Add new Ventrue
+
+	In order to add Ventrue
+	A user
+	Should be able to login
+
+	Scenario: Singing In
+		Given I on "pmvtool-test.demohoster.com"
+		When I fill username with "silver@gmail.com" 
+		And I fill password with "123456qW"
+		And I press on "submit"
+		Then I should see "Welcome to Worthworm!"
+
+	Scenario: Creating Ventrue
+		Given I logged in
+		When I press "+ CREATE VENTURE"
+		And I fill "Name" with 20 letters 
+		And I fill "Description" with 100 letters 
+		And I select "Albania" in drop-down menu
+		And I press "Save"
+		Then I should see 20 letters from "Name"

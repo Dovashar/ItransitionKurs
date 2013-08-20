@@ -1,0 +1,238 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "Add new Ventrue",
+    "line": 1,
+    "description": "\nIn order to add Ventrue\nA user\nShould be able to login",
+    "id": "add-new-ventrue",
+    "uri": "features/login.features",
+    "elements": [
+      {
+        "keyword": "Scenario",
+        "name": "Singing In",
+        "line": 7,
+        "description": "",
+        "id": "add-new-ventrue;singing-in",
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "I on \"pmvtool-test.demohoster.com\"",
+            "line": 8,
+            "match": {
+              "arguments": [
+                {
+                  "offset": 6,
+                  "val": "pmvtool-test.demohoster.com"
+                }
+              ],
+              "location": "features/step_definition/login_steps.rb:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 10989641192
+            }
+          },
+          {
+            "keyword": "When ",
+            "name": "I fill username with \"silver@gmail.com\"",
+            "line": 9,
+            "match": {
+              "arguments": [
+                {
+                  "offset": 22,
+                  "val": "silver@gmail.com"
+                }
+              ],
+              "location": "features/step_definition/login_steps.rb:18"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 240850370
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "I fill password with \"123456qW\"",
+            "line": 10,
+            "match": {
+              "arguments": [
+                {
+                  "offset": 22,
+                  "val": "123456qW"
+                }
+              ],
+              "location": "features/step_definition/login_steps.rb:23"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 90862700
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "I press on \"submit\"",
+            "line": 11,
+            "match": {
+              "arguments": [
+                {
+                  "offset": 12,
+                  "val": "submit"
+                }
+              ],
+              "location": "features/step_definition/login_steps.rb:29"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 8570183769
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "I should see \"Welcome to Worthworm!\"",
+            "line": 12,
+            "match": {
+              "arguments": [
+                {
+                  "offset": 14,
+                  "val": "Welcome to Worthworm!"
+                }
+              ],
+              "location": "features/step_definition/login_steps.rb:34"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1672081225
+            }
+          }
+        ]
+      },
+      {
+        "keyword": "Scenario",
+        "name": "Creating Ventrue",
+        "line": 14,
+        "description": "",
+        "id": "add-new-ventrue;creating-ventrue",
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "I logged in",
+            "line": 15,
+            "match": {
+              "location": "features/step_definition/login_steps.rb:41"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 273813662
+            }
+          },
+          {
+            "keyword": "When ",
+            "name": "I press \"+ CREATE VENTURE\"",
+            "line": 16,
+            "match": {
+              "arguments": [
+                {
+                  "offset": 9,
+                  "val": "+ CREATE VENTURE"
+                }
+              ],
+              "location": "features/step_definition/login_steps.rb:46"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 7215055367
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "I fill \"Name\" with 20 letters",
+            "line": 17,
+            "match": {
+              "arguments": [
+                {
+                  "offset": 8,
+                  "val": "Name"
+                },
+                {
+                  "offset": 19,
+                  "val": "20"
+                }
+              ],
+              "location": "features/step_definition/login_steps.rb:51"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1189350997
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "I fill \"Description\" with 100 letters",
+            "line": 18,
+            "match": {
+              "arguments": [
+                {
+                  "offset": 8,
+                  "val": "Description"
+                },
+                {
+                  "offset": 26,
+                  "val": "100"
+                }
+              ],
+              "location": "features/step_definition/login_steps.rb:51"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 286883986
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "I select \"Albania\" in drop-down menu",
+            "line": 19,
+            "match": {
+              "arguments": [
+                {
+                  "offset": 10,
+                  "val": "Albania"
+                }
+              ],
+              "location": "features/step_definition/login_steps.rb:56"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 509625028
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "I press \"Save\"",
+            "line": 20,
+            "match": {
+              "arguments": [
+                {
+                  "offset": 9,
+                  "val": "Save"
+                }
+              ],
+              "location": "features/step_definition/login_steps.rb:46"
+            },
+            "result": {
+              "status": "failed",
+              "error_message": "Connection refused - connect(2) (Errno::ECONNREFUSED)\n/usr/lib/ruby/1.9.1/net/http.rb:762:in `initialize'\n/usr/lib/ruby/1.9.1/net/http.rb:762:in `open'\n/usr/lib/ruby/1.9.1/net/http.rb:762:in `block in connect'\n/usr/lib/ruby/1.9.1/timeout.rb:54:in `timeout'\n/usr/lib/ruby/1.9.1/timeout.rb:99:in `timeout'\n/usr/lib/ruby/1.9.1/net/http.rb:762:in `connect'\n/usr/lib/ruby/1.9.1/net/http.rb:755:in `do_start'\n/usr/lib/ruby/1.9.1/net/http.rb:744:in `start'\n/usr/lib/ruby/1.9.1/net/http.rb:1284:in `request'\n./features/step_definition/login_steps.rb:48:in `/^I press \"(.*?)\"$/'\nfeatures/login.features:20:in `And I press \"Save\"'",
+              "duration": 7003158991
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "I should see 20 letters from \"Name\"",
+            "line": 21
+          }
+        ]
+      }
+    ]
+  }
+]
